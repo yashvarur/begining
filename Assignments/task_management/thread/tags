@@ -1,0 +1,132 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FIRST_MINOR	kmod.c	12;"	d	file:
+FIRST_MINOR	priority/kmod.c	12;"	d	file:
+FIRST_MINOR	task_state/kmod.c	12;"	d	file:
+FIRST_MINOR	thread_exec/kmod.c	12;"	d	file:
+KDIR	Makefile	/^KDIR:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KDIR	priority/Makefile	/^KDIR:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KDIR	task_state/Makefile	/^KDIR:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KDIR	thread_exec/Makefile	/^KDIR:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+NR_DEVS	kmod.c	13;"	d	file:
+NR_DEVS	priority/kmod.c	13;"	d	file:
+NR_DEVS	task_state/kmod.c	13;"	d	file:
+NR_DEVS	thread_exec/kmod.c	13;"	d	file:
+PWD	Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	priority/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	task_state/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	thread_exec/Makefile	/^PWD:=$(shell pwd)$/;"	m
+STACK_SIZE	clone.c	14;"	d	file:
+_GNU_SOURCE	clone.c	2;"	d	file:
+_GNU_SOURCE	thread_exec/1.c	1;"	d	file:
+__this_module	kmod.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	priority/kmod.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	task_state/kmod.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	thread_exec/kmod.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	kmod.mod.c	/^__used$/;"	v	file:
+__used	kmod.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+__used	priority/kmod.mod.c	/^__used$/;"	v	file:
+__used	priority/kmod.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+__used	task_state/kmod.mod.c	/^__used$/;"	v	file:
+__used	task_state/kmod.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+__used	thread_exec/kmod.mod.c	/^__used$/;"	v	file:
+__used	thread_exec/kmod.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+a	pthread_join/2.c	/^int a = 10;$/;"	v
+attr	real_time_thread/FIFO-13.c	/^pthread_attr_t attr;$/;"	v
+attr	real_time_thread/first_in_first_out.c	/^pthread_attr_t attr;$/;"	v
+attr	real_time_thread/round_robin.c	/^pthread_attr_t attr;$/;"	v
+devname	kmod.c	/^char *devname;$/;"	v
+devname	priority/kmod.c	/^char *devname;$/;"	v
+devname	task_state/kmod.c	/^char *devname;$/;"	v
+devname	thread_exec/kmod.c	/^char *devname;$/;"	v
+experiment	stack_size.c	/^static void * experiment ( void * a )$/;"	f	file:
+fops	kmod.c	/^struct file_operations fops = {$/;"	v	typeref:struct:file_operations
+fops	priority/kmod.c	/^struct file_operations fops = {$/;"	v	typeref:struct:file_operations
+fops	task_state/kmod.c	/^struct file_operations fops = {$/;"	v	typeref:struct:file_operations
+fops	thread_exec/kmod.c	/^struct file_operations fops = {$/;"	v	typeref:struct:file_operations
+main	aa/1.c	/^int main()$/;"	f
+main	aa/2.c	/^int main()$/;"	f
+main	aa/3.c	/^int main()$/;"	f
+main	app_kmod.c	/^int main()$/;"	f
+main	clone.c	/^int main()$/;"	f
+main	priority/app.c	/^int main()$/;"	f
+main	pthread_join/1.c	/^int main()$/;"	f
+main	pthread_join/2.c	/^int main()$/;"	f
+main	real_time_thread/FIFO-13.c	/^int main()$/;"	f
+main	real_time_thread/fifo.c	/^int main()$/;"	f
+main	real_time_thread/first_in_first_out.c	/^int main()$/;"	f
+main	real_time_thread/round_robin.c	/^int main()$/;"	f
+main	real_time_thread/rr.c	/^int main()$/;"	f
+main	stack_size.c	/^int main( int argc , char * argv[] )$/;"	f
+main	task_state/app.c	/^int main()$/;"	f
+main	task_state/test.c	/^int main()$/;"	f
+main	thread_exec/1.c	/^int main(int argc,char**argv)$/;"	f
+majNo	kmod.c	/^int majNo;$/;"	v
+majNo	priority/kmod.c	/^int majNo;$/;"	v
+majNo	task_state/kmod.c	/^int majNo;$/;"	v
+majNo	thread_exec/kmod.c	/^int majNo;$/;"	v
+myExit	kmod.c	/^module_exit(myExit);$/;"	v
+myExit	kmod.c	/^static void myExit(void)$/;"	f	file:
+myExit	priority/kmod.c	/^module_exit(myExit);$/;"	v
+myExit	priority/kmod.c	/^static void myExit(void)$/;"	f	file:
+myExit	task_state/kmod.c	/^module_exit(myExit);$/;"	v
+myExit	task_state/kmod.c	/^static void myExit(void)$/;"	f	file:
+myExit	thread_exec/kmod.c	/^module_exit(myExit);$/;"	v
+myExit	thread_exec/kmod.c	/^static void myExit(void)$/;"	f	file:
+myInit	kmod.c	/^module_init(myInit);$/;"	v
+myInit	kmod.c	/^static int __init myInit(void)$/;"	f	file:
+myInit	priority/kmod.c	/^module_init(myInit);$/;"	v
+myInit	priority/kmod.c	/^static int __init myInit(void)$/;"	f	file:
+myInit	task_state/kmod.c	/^module_init(myInit);$/;"	v
+myInit	task_state/kmod.c	/^static int __init myInit(void)$/;"	f	file:
+myInit	thread_exec/kmod.c	/^module_init(myInit);$/;"	v
+myInit	thread_exec/kmod.c	/^static int __init myInit(void)$/;"	f	file:
+myOpen	kmod.c	/^int myOpen(struct inode *inode, struct file *filep)$/;"	f
+myOpen	priority/kmod.c	/^int myOpen(struct inode *inode, struct file *filep)$/;"	f
+myOpen	task_state/kmod.c	/^int myOpen(struct inode *inode, struct file *filep)$/;"	f
+myOpen	thread_exec/kmod.c	/^int myOpen(struct inode *inode, struct file *filep)$/;"	f
+myRelease	kmod.c	/^int myRelease(struct inode *in, struct file *filep)$/;"	f
+myRelease	priority/kmod.c	/^int myRelease(struct inode *in, struct file *filep)$/;"	f
+myRelease	task_state/kmod.c	/^int myRelease(struct inode *in, struct file *filep)$/;"	f
+myRelease	thread_exec/kmod.c	/^int myRelease(struct inode *in, struct file *filep)$/;"	f
+my_cdev	kmod.c	/^struct cdev *my_cdev;$/;"	v	typeref:struct:cdev
+my_cdev	priority/kmod.c	/^struct cdev *my_cdev;$/;"	v	typeref:struct:cdev
+my_cdev	task_state/kmod.c	/^struct cdev *my_cdev;$/;"	v	typeref:struct:cdev
+my_cdev	thread_exec/kmod.c	/^struct cdev *my_cdev;$/;"	v	typeref:struct:cdev
+mychar_class	kmod.c	/^static struct class *mychar_class;$/;"	v	typeref:struct:class	file:
+mychar_class	priority/kmod.c	/^static struct class *mychar_class;$/;"	v	typeref:struct:class	file:
+mychar_class	task_state/kmod.c	/^static struct class *mychar_class;$/;"	v	typeref:struct:class	file:
+mychar_class	thread_exec/kmod.c	/^static struct class *mychar_class;$/;"	v	typeref:struct:class	file:
+mychar_device	kmod.c	/^static struct device *mychar_device;$/;"	v	typeref:struct:device	file:
+mychar_device	priority/kmod.c	/^static struct device *mychar_device;$/;"	v	typeref:struct:device	file:
+mychar_device	task_state/kmod.c	/^static struct device *mychar_device;$/;"	v	typeref:struct:device	file:
+mychar_device	thread_exec/kmod.c	/^static struct device *mychar_device;$/;"	v	typeref:struct:device	file:
+mydev	kmod.c	/^static dev_t mydev;$/;"	v	file:
+mydev	priority/kmod.c	/^static dev_t mydev;$/;"	v	file:
+mydev	task_state/kmod.c	/^static dev_t mydev;$/;"	v	file:
+mydev	thread_exec/kmod.c	/^static dev_t mydev;$/;"	v	file:
+myioctl	kmod.c	/^long myioctl(struct file *fp,unsigned int pid, unsigned long usr_vaddr)$/;"	f
+myioctl	priority/kmod.c	/^long myioctl(struct file *fp,unsigned int pid, unsigned long usr_vaddr)$/;"	f
+myioctl	task_state/kmod.c	/^long myioctl(struct file *fp,unsigned int pid, unsigned long usr_vaddr)$/;"	f
+myioctl	thread_exec/kmod.c	/^long myioctl(struct file *fp,unsigned int pid, unsigned long usr_vaddr)$/;"	f
+num	task_state/app.c	/^int num =123;$/;"	v
+obj-m	Makefile	/^obj-m:=kmod.o$/;"	m
+obj-m	priority/Makefile	/^obj-m:=kmod.o$/;"	m
+obj-m	task_state/Makefile	/^obj-m:=kmod.o$/;"	m
+obj-m	thread_exec/Makefile	/^obj-m:=kmod.o$/;"	m
+p	pthread_join/2.c	/^int *p;$/;"	v
+t_status	pthread_join/1.c	/^int t_status;$/;"	v
+thread_create	aa/1.c	/^void *thread_create(void *p)$/;"	f
+thread_create	app_kmod.c	/^void *thread_create(void *p)$/;"	f
+thread_fun	pthread_join/1.c	/^void *thread_fun(void *p)$/;"	f
+thread_fun	real_time_thread/FIFO-13.c	/^void *thread_fun(void*v)$/;"	f
+thread_fun	real_time_thread/fifo.c	/^void *thread_fun()$/;"	f
+thread_fun	real_time_thread/first_in_first_out.c	/^void *thread_fun(void*v)$/;"	f
+thread_fun	real_time_thread/round_robin.c	/^void *thread_fun(void*v)$/;"	f
+thread_fun	real_time_thread/rr.c	/^void *thread_fun()$/;"	f
+thread_function	clone.c	/^int thread_function(void *p) $/;"	f
+thread_function	thread_exec/1.c	/^void *thread_function(char*p)$/;"	f

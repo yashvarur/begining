@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGN	file/file.c	5;"	d	file:
+ALIGN	header/header.h	9;"	d
+FREE	header/header.h	10;"	d
+INCLUDE	Makefile	/^INCLUDE=header$/;"	m
+LEN	header/header.h	8;"	d
+OBJ	Makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+SIZE	file/file.c	4;"	d	file:
+SIZE	header/header.h	7;"	d
+SRC	Makefile	/^SRC= $(shell ls .\/source)$/;"	m
+VPATH	Makefile	/^VPATH=.\/source .\/object$/;"	m
+blk	file/file.c	/^    unsigned short blk[5];$/;"	m	struct:inode_table	file:
+blk	header/header.h	/^    unsigned short blk[5];$/;"	m	struct:inode_table
+blk_used	file/file.c	/^    unsigned int blk_used;$/;"	m	struct:inode_table	file:
+blk_used	header/header.h	/^    unsigned int blk_used;$/;"	m	struct:inode_table
+count	file/file.c	/^int count = 0;$/;"	v
+count	header/header.h	/^int count;$/;"	v
+create_file	file/file.c	/^void create_file(int *ip, struct inode_table *itp, struct super_block *sup)$/;"	f
+create_file	source/create.c	/^void create_file(int *ip, struct inode_table *itp, struct super_block *sup)$/;"	f
+display_file	file/file.c	/^void display_file(struct inode_table *itp, int *dp)$/;"	f
+display_file	source/display.c	/^void display_file(struct inode_table *itp, int *dp)$/;"	f
+fname	file/file.c	/^    unsigned char fname[8];$/;"	m	struct:inode_table	file:
+fname	header/header.h	/^    unsigned char fname[8];$/;"	m	struct:inode_table
+free_datablocks	file/file.c	/^    unsigned int free_datablocks;$/;"	m	struct:super_block	file:
+free_datablocks	header/header.h	/^    unsigned int free_datablocks;$/;"	m	struct:super_block
+free_inodes	file/file.c	/^    unsigned int free_inodes;$/;"	m	struct:super_block	file:
+free_inodes	header/header.h	/^    unsigned int free_inodes;$/;"	m	struct:super_block
+i_no	file/file.c	/^    unsigned int i_no;$/;"	m	struct:inode_table	file:
+i_no	header/header.h	/^    unsigned int i_no;$/;"	m	struct:inode_table
+inode_table	file/file.c	/^struct inode_table { \/* Inode table*\/$/;"	s	file:
+inode_table	header/header.h	/^struct inode_table {$/;"	s
+int_read	source/read.c	/^int int_read()$/;"	f
+list_file	file/file.c	/^void list_file(struct inode_table *itp, int *ibp)$/;"	f
+list_file	source/list.c	/^void list_file(struct inode_table *itp, int *ibp)$/;"	f
+main	file/file.c	/^int main()$/;"	f
+main	source/main.c	/^int main()$/;"	f
+remove_file	file/file.c	/^void remove_file(struct inode_table *itp, int *ibp, int *dbp,$/;"	f
+remove_file	source/remove.c	/^void remove_file(struct inode_table *itp, int *ibp, int *dbp, struct super_block *sup)$/;"	f
+size	file/file.c	/^    unsigned int size;$/;"	m	struct:inode_table	file:
+size	header/header.h	/^    unsigned int size;$/;"	m	struct:inode_table
+strcpy1	file/file.c	/^char *strcpy1(char *str1, char *str2, int i, int j)$/;"	f
+strcpy1	source/strcp.c	/^char *strcpy1(char *str1, char *str2, int i, int j)$/;"	f
+super_block	file/file.c	/^struct super_block { \/* superblock structure *\/$/;"	s	file:
+super_block	header/header.h	/^struct super_block {$/;"	s
+total_datablocks	file/file.c	/^    unsigned int total_datablocks;$/;"	m	struct:super_block	file:
+total_datablocks	header/header.h	/^    unsigned int total_datablocks;$/;"	m	struct:super_block
+total_inodes	file/file.c	/^    unsigned int total_inodes;$/;"	m	struct:super_block	file:
+total_inodes	header/header.h	/^    unsigned int total_inodes;$/;"	m	struct:super_block
+write_file	file/file.c	/^void write_file(struct inode_table *itp, int *dbp, int *sp, int *ip,$/;"	f
+write_file	source/write.c	/^void write_file(struct inode_table *itp, int *dbp, int *sp, int *ip,$/;"	f

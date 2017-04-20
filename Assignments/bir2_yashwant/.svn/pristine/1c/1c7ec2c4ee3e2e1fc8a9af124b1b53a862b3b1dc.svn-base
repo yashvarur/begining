@@ -1,0 +1,16 @@
+#include"header.h"		/* function to find largest of elements in an array */
+void fun(int a[],int n)
+{
+        int i,l;
+        
+        printf("array elements\n");
+        for(i=0;i<n;i++)
+        printf("%d\n",a[i]);
+	l=a[0];
+	for(i=0;i<n;i++) {
+		if(l<a[i])
+		l=a[i];
+      	}
+  	printf("largest elements in an array=%d\n",a[n-1]);
+}
+

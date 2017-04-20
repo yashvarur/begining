@@ -1,0 +1,9 @@
+#include"header.h"
+int fun(int num)
+{
+        if(num!=1)
+        return fun(num-1)*num;
+	else
+	return 1;
+}
+

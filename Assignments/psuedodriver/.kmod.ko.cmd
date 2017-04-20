@@ -1,0 +1,1 @@
+cmd_/home/yashwantaray/Assignments/psuedodriver/kmod.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/yashwantaray/Assignments/psuedodriver/kmod.ko /home/yashwantaray/Assignments/psuedodriver/kmod.o /home/yashwantaray/Assignments/psuedodriver/kmod.mod.o

@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INCLUDE	Makefile	/^INCLUDE=header$/;"	m
+MNODE	header/header.h	/^}MNODE;$/;"	t	typeref:struct:main_list
+OBJ	Makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+SNODE	header/header.h	/^}SNODE;$/;"	t	typeref:struct:sub_list
+SRC	Makefile	/^SRC= $(shell ls .\/source)$/;"	m
+VPATH	Makefile	/^VPATH=.\/source .\/object$/;"	m
+creation	source/CREATE.c	/^MNODE * creation(MNODE *start)$/;"	f
+display_main	source/display_main.c	/^void display_main(MNODE * p)$/;"	f
+insert	source/INSERT.c	/^MNODE * insert(MNODE *p)$/;"	f
+insert_front	source/insert_main_front.c	/^MNODE * insert_front(MNODE*p)$/;"	f
+insert_rear	source/insert_main_rear.c	/^MNODE * insert_rear(MNODE * p)$/;"	f
+insert_sub_front	source/insert_sub_front.c	/^MNODE * insert_sub_front(MNODE *p,SNODE *start)$/;"	f
+insert_sub_rear	source/insert_sub_rear.c	/^MONODE * insert_sub_rear(MNODE *p, SNODE *start)$/;"	f
+link_sublist	header/header.h	/^	struct sub_list *link_sublist;$/;"	m	struct:main_list	typeref:struct:main_list::sub_list
+main	source/main.c	/^int main()$/;"	f
+main_list	header/header.h	/^typedef struct main_list$/;"	s
+mdata	header/header.h	/^	int mdata;$/;"	m	struct:main_list
+mnext	header/header.h	/^	struct main_list *mnext;$/;"	m	struct:main_list	typeref:struct:main_list::main_list
+mprev	header/header.h	/^	struct main_list *mprev;$/;"	m	struct:main_list	typeref:struct:main_list::main_list
+sdata	header/header.h	/^	int sdata;$/;"	m	struct:sub_list
+snext	header/header.h	/^	struct sub_list *snext;$/;"	m	struct:sub_list	typeref:struct:sub_list::sub_list
+sprev	header/header.h	/^	struct sub_list *sprev;$/;"	m	struct:sub_list	typeref:struct:sub_list::sub_list
+sub_list	header/header.h	/^typedef struct sub_list$/;"	s

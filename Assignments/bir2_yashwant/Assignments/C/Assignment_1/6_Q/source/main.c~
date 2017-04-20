@@ -1,0 +1,10 @@
+#include"header.h"
+int main()
+{
+        int n;  //read the range of number you want to add
+	printf("enter the number of terms you want to add\n");
+        scanf("%d",&n);
+	printf("sum of %d number is=%d \n ",n,fun(n));
+return 0;
+}
+

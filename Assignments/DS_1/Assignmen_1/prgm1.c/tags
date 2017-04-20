@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	header/header.h	3;"	d
+display	source/display.c	/^void display()$/;"	f
+main	source/main.c	/^int main()$/;"	f
+pop	source/popele.c	/^void pop()$/;"	f
+popn	source/pospop.c	/^void popn(int pos)$/;"	f
+push	source/pushele.c	/^void push(int ele)$/;"	f
+pushn	source/pospush.c	/^void pushn(int pos,int ele)$/;"	f
+s	header/header.h	/^	int s[MAX];$/;"	m	struct:stack
+st	header/header.h	/^}st;$/;"	v	typeref:struct:stack
+stack	header/header.h	/^struct stack$/;"	s
+top	header/header.h	/^	int top;$/;"	m	struct:stack

@@ -1,0 +1,10 @@
+
+#include<limits.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<malloc.h>
+int int_read();
+void binary(int n);
+void bit_cp(int s,int d,int src,int dest);
+

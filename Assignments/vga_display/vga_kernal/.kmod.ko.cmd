@@ -1,0 +1,1 @@
+cmd_/home/yashwantaray/Assignments/vga_display/vga_kernal/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/yashwantaray/Assignments/vga_display/vga_kernal/kmod.ko /home/yashwantaray/Assignments/vga_display/vga_kernal/kmod.o /home/yashwantaray/Assignments/vga_display/vga_kernal/kmod.mod.o

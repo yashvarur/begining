@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARPOP_REQUEST	arp.c	58;"	d	file:
+ARP_HDRLEN	arp.c	57;"	d	file:
+ETH_HDRLEN	arp.c	55;"	d	file:
+IP4_HDRLEN	arp.c	56;"	d	file:
+MAX	raw_socket_sender.c	17;"	d	file:
+_arp_hdr	arp.c	/^struct _arp_hdr {$/;"	s	file:
+allocate_strmem	arp.c	/^allocate_strmem (int len)$/;"	f
+allocate_ustrmem	arp.c	/^allocate_ustrmem (int len)$/;"	f
+arp_hdr	arp.c	/^typedef struct _arp_hdr arp_hdr;$/;"	t	typeref:struct:_arp_hdr	file:
+check	raw_socket_reciver.c	/^  unsigned short check;$/;"	m	struct:iphdr1	file:
+check	raw_socket_sender.c	/^  unsigned short check;$/;"	m	struct:iphdr1	file:
+daddr	raw_socket_reciver.c	/^  __be32 daddr;$/;"	m	struct:iphdr1	file:
+daddr	raw_socket_sender.c	/^  __be32 daddr;$/;"	m	struct:iphdr1	file:
+ethhdr1	raw_socket_reciver.c	/^struct ethhdr1$/;"	s	file:
+frag_off	raw_socket_reciver.c	/^  unsigned short frag_off;$/;"	m	struct:iphdr1	file:
+frag_off	raw_socket_sender.c	/^  unsigned short frag_off;$/;"	m	struct:iphdr1	file:
+h_dest	raw_socket_reciver.c	/^  unsigned char h_dest[ETH_ALEN];	\/* destination eth addr *\/$/;"	m	struct:ethhdr1	file:
+h_proto	raw_socket_reciver.c	/^  __be16 h_proto;		\/* packet type ID field *\/$/;"	m	struct:ethhdr1	file:
+h_source	raw_socket_reciver.c	/^  unsigned char h_source[ETH_ALEN];	\/* source ether addr    *\/$/;"	m	struct:ethhdr1	file:
+hlen	arp.c	/^    uint8_t hlen;$/;"	m	struct:_arp_hdr	file:
+htype	arp.c	/^    uint16_t htype;$/;"	m	struct:_arp_hdr	file:
+id	raw_socket_reciver.c	/^  unsigned short id;$/;"	m	struct:iphdr1	file:
+id	raw_socket_sender.c	/^  unsigned short id;$/;"	m	struct:iphdr1	file:
+ihl	raw_socket_reciver.c	/^  unsigned char ihl:4, version:4;$/;"	m	struct:iphdr1	file:
+ihl	raw_socket_sender.c	/^  unsigned char ihl:4, version:4;$/;"	m	struct:iphdr1	file:
+iphdr1	raw_socket_reciver.c	/^struct iphdr1$/;"	s	file:
+iphdr1	raw_socket_sender.c	/^struct iphdr1$/;"	s	file:
+main	arp.c	/^main (int argc, char **argv)$/;"	f
+main	raw_socket_reciver.c	/^main ()$/;"	f
+main	raw_socket_sender.c	/^int main ()$/;"	f
+opcode	arp.c	/^    uint16_t opcode;$/;"	m	struct:_arp_hdr	file:
+plen	arp.c	/^    uint8_t plen;$/;"	m	struct:_arp_hdr	file:
+protocol	raw_socket_reciver.c	/^  unsigned char protocol;$/;"	m	struct:iphdr1	file:
+protocol	raw_socket_sender.c	/^  unsigned char protocol;$/;"	m	struct:iphdr1	file:
+ptype	arp.c	/^    uint16_t ptype;$/;"	m	struct:_arp_hdr	file:
+saddr	raw_socket_reciver.c	/^  __be32 saddr;$/;"	m	struct:iphdr1	file:
+saddr	raw_socket_sender.c	/^  __be32 saddr;$/;"	m	struct:iphdr1	file:
+sender_ip	arp.c	/^    uint8_t sender_ip[4];$/;"	m	struct:_arp_hdr	file:
+sender_mac	arp.c	/^    uint8_t sender_mac[6];$/;"	m	struct:_arp_hdr	file:
+target_ip	arp.c	/^    uint8_t target_ip[4];$/;"	m	struct:_arp_hdr	file:
+target_mac	arp.c	/^    uint8_t target_mac[6];$/;"	m	struct:_arp_hdr	file:
+tos	raw_socket_reciver.c	/^  unsigned char tos;$/;"	m	struct:iphdr1	file:
+tos	raw_socket_sender.c	/^  unsigned char tos;$/;"	m	struct:iphdr1	file:
+tot_len	raw_socket_reciver.c	/^  unsigned short tot_len;$/;"	m	struct:iphdr1	file:
+tot_len	raw_socket_sender.c	/^  unsigned short tot_len;$/;"	m	struct:iphdr1	file:
+ttl	raw_socket_reciver.c	/^  unsigned char ttl;$/;"	m	struct:iphdr1	file:
+ttl	raw_socket_sender.c	/^  unsigned char ttl;$/;"	m	struct:iphdr1	file:
+version	raw_socket_reciver.c	/^  unsigned char ihl:4, version:4;$/;"	m	struct:iphdr1	file:
+version	raw_socket_sender.c	/^  unsigned char ihl:4, version:4;$/;"	m	struct:iphdr1	file:

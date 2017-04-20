@@ -1,0 +1,1 @@
+cmd_/home/yashwantaray/Assignments/yash/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/yashwantaray/Assignments/yash/kmod.ko /home/yashwantaray/Assignments/yash/kmod.o /home/yashwantaray/Assignments/yash/kmod.mod.o

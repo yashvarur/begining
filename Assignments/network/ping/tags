@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SIZE	ping_send.c	12;"	d	file:
+dst_addr	ping_recv.c	/^char dst_addr[15];$/;"	v
+getip	ping_recv.c	/^char* getip()$/;"	f
+in_cksum	ping_recv.c	/^unsigned short in_cksum(unsigned short *addr, int len)$/;"	f
+main	ping_recv.c	/^int main(int argc, char* argv[])$/;"	f
+main	ping_send.c	/^int main()$/;"	f
+parse_argvs	ping_recv.c	/^void parse_argvs(char** argv, char* dst, char* src)$/;"	f
+recvbuf	ping_send.c	/^char recvbuf[SIZE];$/;"	v
+sendbuf	ping_send.c	/^char sendbuf [SIZE];$/;"	v
+src_addr	ping_recv.c	/^char src_addr[15];$/;"	v
+usage	ping_recv.c	/^void usage()$/;"	f

@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INCLUDE	makefile	/^INCLUDE=header$/;"	m
+OBJ	makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+SRC	makefile	/^SRC= $(shell ls .\/source)$/;"	m
+VPATH	makefile	/^VPATH=.\/source .\/object$/;"	m
+dynamic_section	source/dynamic_section.c	/^void dynamic_section(FILE *fp)$/;"	f
+dynsym	source/dynsym.c	/^void dynsym(FILE*fp)$/;"	f
+elf_header	source/elf_header.c	/^void elf_header(Elf32_Ehdr *header_p)$/;"	f
+main	source/main.c	/^int main(int argc,char *argv[])$/;"	f
+program_header	source/program_header.c	/^void program_header(FILE *fp)$/;"	f
+relocation_dyn	source/relocation_dyn.c	/^void relocation_dyn(FILE*fp)$/;"	f
+relocation_section	source/relocation_section.c	/^void relocation_section(FILE*fp)$/;"	f
+section_header	source/section_header.c	/^void section_header(FILE *fp)$/;"	f
+symtab	source/symtab.c	/^void symtab( FILE*fp )$/;"	f

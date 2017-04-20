@@ -1,0 +1,10 @@
+
+#include"header.h"
+int main()
+{
+	char a;
+	printf("enter the character\n");
+	scanf("%c",&a);
+	fun(a);
+return 0;
+}

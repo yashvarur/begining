@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC=gcc -Wall$/;"	m
+INCLUDE	makefile	/^INCLUDE = .\/header$/;"	m
+LIST	header/header.h	/^typedef struct list LIST;$/;"	t	typeref:struct:list
+OBJ	makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+SRC	makefile	/^SRC = $(shell ls .\/source)$/;"	m
+SUB	header/header.h	/^typedef struct sub_list SUB; $/;"	t	typeref:struct:sub_list
+VPATH	makefile	/^VPATH = .\/source .\/object$/;"	m
+convert_to_int	source/validation.c	/^double convert_to_int(char *str)$/;"	f
+create_list	source/create_operation.c	/^LIST * create_list(LIST * list)$/;"	f
+create_node	source/create_node.c	/^LIST * create_node ()$/;"	f
+create_subnode	source/create_subnode.c	/^SUB * create_subnode ()$/;"	f
+data	header/header.h	/^	int data;$/;"	m	struct:list
+data	header/header.h	/^	int data;$/;"	m	struct:sub_list
+delete_a_value	source/delete_a_value.c	/^SUB * delete_a_value (SUB * START)$/;"	f
+delete_after_value	source/delete_after_value.c	/^SUB * delete_after_value (SUB * START)$/;"	f
+delete_at_position	source/delete_at_position.c	/^SUB * delete_at_position (SUB * START)$/;"	f
+delete_before_value	source/delete_before_value.c	/^SUB * delete_before_value (SUB * START)$/;"	f
+delete_entire_list	source/delete_entire_list.c	/^LIST * delete_entire_list (LIST * START, LIST * temp)$/;"	f
+delete_operation	source/delete_operation.c	/^LIST * delete_operation (LIST * START)$/;"	f
+delete_subnode_front	source/delete_subnode_front.c	/^SUB * delete_subnode_front (SUB * START)$/;"	f
+delete_subnode_rear	source/delete_subnode_rear.c	/^SUB * delete_subnode_rear (SUB * START)$/;"	f
+display_forward	source/display_forward.c	/^LIST * display_forward (LIST * START)$/;"	f
+display_operation	source/display.c	/^LIST * display_operation (LIST * START)$/;"	f
+display_reverse	source/display_reverse.c	/^LIST * display_reverse (LIST * START)$/;"	f
+display_system	source/display_system.c	/^LIST * display_system (LIST * START)$/;"	f
+insert_after_value	source/insert_after_value.c	/^SUB * insert_after_value (SUB * START)$/;"	f
+insert_at_position	source/insert_at_position.c	/^SUB * insert_at_position (SUB * START)$/;"	f
+insert_before_value	source/insert_before_value.c	/^SUB * insert_before_value (SUB * START)$/;"	f
+insert_front	source/insert_front.c	/^LIST * insert_front (LIST * START)$/;"	f
+insert_operation	source/insert_operation.c	/^LIST * insert_operation (LIST * START)$/;"	f
+insert_rear	source/insert_rear.c	/^LIST* insert_rear (LIST * START)$/;"	f
+insert_subnode_front	source/insert_subnode_front.c	/^SUB * insert_subnode_front (SUB * START)$/;"	f
+insert_subnode_rear	source/insert_subnode_rear.c	/^SUB * insert_subnode_rear (SUB * START)$/;"	f
+list	header/header.h	/^struct list {$/;"	s
+main	source/main.c	/^int main()$/;"	f
+next	header/header.h	/^	struct list * next;$/;"	m	struct:list	typeref:struct:list::list
+next	header/header.h	/^	struct sub_list * next;$/;"	m	struct:sub_list	typeref:struct:sub_list::sub_list
+prev	header/header.h	/^	struct list * prev;$/;"	m	struct:list	typeref:struct:list::list
+prev	header/header.h	/^	struct sub_list * prev;$/;"	m	struct:sub_list	typeref:struct:sub_list::sub_list
+read_int	source/validation.c	/^int read_int()$/;"	f
+search_operation	source/search_operation.c	/^LIST * search_operation (LIST * START)$/;"	f
+search_sublist_max	source/search_sublist_max.c	/^LIST * search_sublist_max (LIST * START)$/;"	f
+search_sublist_min	source/search_sublist_min.c	/^LIST * search_sublist_min (LIST * START)$/;"	f
+search_sublist_value	source/search_sublist_value.c	/^LIST * search_sublist_value (LIST * START)$/;"	f
+search_system_max	source/search_system_max.c	/^LIST * search_system_max (LIST * START)$/;"	f
+search_system_min	source/search_system_min.c	/^LIST * search_system_min (LIST * START)$/;"	f
+search_system_value	source/search_system_value.c	/^LIST * search_system_value (LIST * START)$/;"	f
+sub_list	header/header.h	/^struct sub_list {$/;"	s
+sub_ls	header/header.h	/^	struct sub_list * sub_ls;$/;"	m	struct:list	typeref:struct:list::sub_list

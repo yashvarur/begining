@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+i	server.c	/^int i = 0;$/;"	v
+main	client.c	/^int main(int argc, char *argv[])$/;"	f
+main	server.c	/^int main(int argc , char *argv[])$/;"	f
+new_soc_fd	server.c	/^int new_soc_fd[10];$/;"	v
+no_of_connections	server.c	/^int no_of_connections = 0;$/;"	v
+read_fds	server.c	/^fd_set read_fds;$/;"	v
+thread_read_function	client.c	/^void thread_read_function(int  args)$/;"	f
+thread_write_function	client.c	/^void thread_write_function(int args)$/;"	f
+thread_write_function	server.c	/^void thread_write_function(int args)$/;"	f
+write_fd	server.c	/^int write_fd = 0;$/;"	v

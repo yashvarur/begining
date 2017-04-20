@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INCLUDE	Makefile	/^INCLUDE=header$/;"	m
+OBJ	Makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+SRC	Makefile	/^SRC= $(shell ls .\/source)$/;"	m
+VPATH	Makefile	/^VPATH=.\/source .\/object$/;"	m
+a	header/header.h	/^        int a[10];$/;"	m	struct:stack_1
+b	header/header.h	/^        int b[10];$/;"	m	struct:stack_2
+display	source/display.c	/^void display()$/;"	f
+main	source/main.c	/^int main()$/;"	f
+pop	source/pop.c	/^void pop()$/;"	f
+pop1	source/pop1.c	/^int pop1()$/;"	f
+push	source/push.c	/^void push(int ele)$/;"	f
+push1	source/push1.c	/^void push1(int ele)$/;"	f
+st1	header/header.h	/^}st1;$/;"	v	typeref:struct:stack_1
+st2	header/header.h	/^}st2;$/;"	v	typeref:struct:stack_2
+stack_1	header/header.h	/^struct stack_1$/;"	s
+stack_2	header/header.h	/^struct stack_2$/;"	s
+top1	header/header.h	/^        int top1;$/;"	m	struct:stack_1
+top2	header/header.h	/^        int top2;$/;"	m	struct:stack_2

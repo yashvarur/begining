@@ -1,0 +1,310 @@
+#include<stdlib.h>
+#include<stdio.h>
+typedef struct linked_list
+{
+	int data;
+	struct linked_list * next;
+}NODE;
+int l;
+NODE* insert_middle(NODE *p)
+{
+	int ele;
+	int i;
+	int count=0;
+	NODE *new_node;
+	NODE *e;
+	NODE *temp;
+	l++;
+        printf("enter the element to insert\n");
+        scanf("%d",&ele);
+        new_node = malloc(sizeof(NODE));
+        new_node->data = ele;
+        if(p == NULL) {
+                p = new_node;
+        }
+	else {
+		temp = p;
+		while(temp->next != NULL) {
+			temp = temp->next;
+			count++;
+		}
+		count = count + 1;
+		temp = p;
+		count = count/2;
+		for(i=0 ;i< (count-1);i++) {
+			temp = temp->next;
+		}
+		e = temp->next;
+		temp->next = new_node;
+		new_node->next = e;     
+	}
+	return(p);
+}
+	
+NODE* insert_front(NODE *p)
+{
+	int ele;
+        NODE *new_node;
+        printf("enter the element to insert\n");
+        scanf("%d",&ele);
+	l++;
+        new_node = malloc(sizeof(NODE));
+	new_node->data = ele;
+	if(p == NULL) {
+		p = new_node;
+	}
+	else {
+		new_node->next = p;
+		p = new_node;
+	}
+	return(p);
+}
+		
+NODE* insert_rear(NODE *p)
+{
+	int ele;
+	NODE *new_node;
+	NODE *temp;
+	l++;
+	printf("enter the element to insert\n");
+        scanf("%d",&ele);
+	new_node = malloc(sizeof(NODE));
+	new_node->data = ele;
+	new_node->next = NULL;
+	if( p == NULL)
+		p = new_node;
+	else {
+		temp = p;
+		while(temp->next != NULL)
+			temp  = temp->next;
+		temp->next = new_node;
+	}
+	return (p);
+}
+void display(NODE *p)
+{
+	NODE *temp;
+	temp = p;
+	if(p == NULL)	
+		printf("no element to display\n");
+	else  {
+		printf("content of list\n");
+		while(temp->next != NULL) {
+			printf("%d\t",temp->data);
+			temp = temp->next;
+		}
+		printf("%d\n",temp->data);
+	}
+}
+	
+NODE* insert_position(NODE *p)
+{
+	int ele;
+	int i;	
+	int pos;
+	NODE *e;
+        NODE *new_node;
+        NODE *temp;
+        printf("enter the element to insert\n");
+        scanf("%d",&ele);
+	printf("enter the position to insert\n");
+	scanf("%d",&pos);
+	if(pos <= (l+1)) {
+		new_node = malloc(sizeof(NODE));
+       		new_node->data = ele;
+       		new_node->next = NULL;
+       		if( p == NULL)
+               		p = new_node;
+		else {
+			temp = p;
+			if(pos == 1) {
+				new_node->next = temp;
+				p = new_node;
+			}
+			else {
+				for(i = 0;i < (pos-2);i++)
+					temp = temp->next;
+				e = temp->next;
+				temp->next = new_node;
+				new_node->next = e;
+			}
+		}
+	}
+	else {
+		printf("you entered invalid position\n");
+	}
+	return (p);
+}
+			
+NODE* delete_rear(NODE * p)
+{
+	NODE *temp1;
+	NODE *temp2;
+	temp2 = p;
+	l--;
+	int count=0;
+	if(p == NULL) {
+		printf("no contents\n");
+		return NULL;
+	}
+	else {
+		temp1 = p;
+		while(temp1->next != NULL) {
+			temp2 = temp1; 
+			temp1 = temp1->next;
+			count++;
+		}
+		if(count == 0) {
+			p = NULL;
+		}
+		else
+		temp2->next = NULL;
+		printf("element %d is succesfully removed \n",temp1->data);
+		free(temp1);	
+	}	
+		return(p);		
+}
+	
+NODE* delete_front(NODE *p)
+{
+	NODE *temp,*new_node;
+	temp = p;
+	l--;
+	if(p == NULL) {
+		printf("no content\n");
+		return NULL;
+	}
+	else {
+		if(temp->next == NULL) {
+			p = NULL;
+			printf("element %d is successfully removed\n",temp->data);
+			free(temp);
+		}
+		else {
+			new_node = temp->next;
+			printf("element %d is successfully removed\n",temp->data);
+			free(temp);
+			p = new_node;
+		}
+	}
+	return p;
+}
+NODE *delete_middle(NODE*p)
+{
+	int c;
+	NODE *temp1,*temp2;
+	int i;
+	NODE *prev;
+	temp1 = p;
+	temp2 = p;
+	l--;
+	if(p == NULL) {
+		printf("no contents\n");
+		return NULL;
+	}
+	else {
+		while(temp1->next != NULL) {
+			temp1 = temp1->next;
+			c++;
+		}
+	c = c + 1;
+	c = c / 2;
+	for(i=0;i<=(c-1);i++) {
+		prev = temp2;
+		temp2 = temp2->next;
+	}
+	temp1 = p;
+	prev->next = temp2->next;
+	printf("element removed is %d\n",temp2->data);
+	free(temp2);
+	if(temp1->next == NULL)
+		p = NULL;
+	}
+	
+	return p;	
+}
+NODE *delete_position(NODE*p)
+{
+	NODE *temp;
+	NODE *prev;
+	NODE *new;	
+	int pos;
+	int c = 0;
+	int i;
+	temp = p;
+	 if( p == NULL) {
+                printf("no contents\n");
+                return NULL;
+        }
+	printf("enter the position to delete the element\n");
+	scanf("%d",&pos);
+	if(pos <= l) {
+	
+			temp = p;
+			prev = p;
+			if(pos == 1) {
+				prev->next = temp->next;
+				p = prev;
+				printf("removed data = %d\n",temp->data);
+				free(temp);
+				return NULL;
+			}
+			else {	
+				for(i = 1;i < pos;i++) {
+					prev = temp;
+					temp = temp->next;
+				}
+				prev ->next = temp->next;
+				printf("element removed is %d\n ",temp->data);
+				free(temp);
+				
+			}	
+	}		
+	else
+		printf("invalid position\n");
+	return p;
+}
+		
+	
+ 
+			
+int main()
+{
+	NODE *start;
+	int c = 1;
+	int ch;
+	start = malloc(sizeof(NODE));
+	start = NULL;
+	while(c == 1) {
+		printf("ENTER\n");
+		printf("\t1-insert at rear\n\t2-insert at front\n\t3-insert at middle\n");
+		printf("\t4-insert at specified position\n\t5-delete at rear\n\t6-delete at front\n");
+		printf("\t7-delete at middle\n\t8-delete at specified position\n\t9-display\n");
+		scanf("%d",&ch);
+		switch(ch) {
+			case 1:start = insert_rear(start);
+		       		break;
+			case 2: start = insert_front(start);
+		       		break;
+			case 3: start = insert_middle(start);
+				break;
+			case 4: start = insert_position(start);
+				break;
+			case 5: start = delete_rear(start);
+				break;
+			case 6: start = delete_front(start);
+				break;
+			case 7: start = delete_middle(start);
+				break;
+			case 8: start = delete_position(start);
+				break;
+			case 9: display(start);
+				break;
+		       default: exit(0);
+		}
+		printf("press 1-to continue\n");
+		scanf("%d",&c);
+	}
+
+	return 0;
+}

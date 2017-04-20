@@ -1,0 +1,1 @@
+cmd_/home/yashwantaray/Assignments/task_management/thread/priority/kmod.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/yashwantaray/Assignments/task_management/thread/priority/kmod.ko /home/yashwantaray/Assignments/task_management/thread/priority/kmod.o /home/yashwantaray/Assignments/task_management/thread/priority/kmod.mod.o

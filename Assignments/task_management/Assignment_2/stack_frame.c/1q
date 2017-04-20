@@ -1,0 +1,21 @@
+# include <stdio.h>
+# include <unistd.h>
+int main()
+{
+	int a = 10;
+	pid_t pid;
+	pid = fork();
+	if(pid > 0) {
+		printf("value of a = %d\n",a);
+		printf("parent pid = %d\n",getpid());
+		wait(NULL);
+		printf("value of a = %d\n",a);
+	}
+	else if(pid == 0) {
+		printf("child pid = %d\n",getpid());
+		a = 20;
+		printf("value of a inside child = %d\n",a);
+		exit(0);
+	}
+	return 0;
+}

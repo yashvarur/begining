@@ -1,0 +1,13 @@
+#include"header.h"
+void display()
+{
+	int i;
+	if(cq.front == -1)
+		printf("no content to display\n");
+	else {
+		printf("content of circular queue\n");
+		for(i = cq.front ; i <=cq.rear ; i++)
+			printf("%d\t",cq.s[i]);
+	}
+	printf("\n");
+}

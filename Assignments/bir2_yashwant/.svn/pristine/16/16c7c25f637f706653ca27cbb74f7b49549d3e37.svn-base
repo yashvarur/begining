@@ -1,0 +1,10 @@
+#include"stdio.h"
+void fun(int marks) 
+{
+	if(marks>70) 
+        	printf("student got pass in distiction");
+        else if(marks>60 && marks<70)
+        	printf("student got pass in first class\n");
+        else
+        	printf("student got failed\n");
+}

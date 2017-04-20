@@ -1,0 +1,1 @@
+cmd_/home/yashwantaray/Assignments/task_management/Assignment_2/vfs/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/yashwantaray/Assignments/task_management/Assignment_2/vfs/kmod.ko /home/yashwantaray/Assignments/task_management/Assignment_2/vfs/kmod.o /home/yashwantaray/Assignments/task_management/Assignment_2/vfs/kmod.mod.o
